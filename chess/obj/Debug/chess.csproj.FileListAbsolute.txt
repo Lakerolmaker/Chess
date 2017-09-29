@@ -1,0 +1,39 @@
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\bin\Debug\chess.exe.config
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\bin\Debug\chess.exe
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\bin\Debug\chess.pdb
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\obj\Debug\chess.csprojResolveAssemblyReference.cache
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\obj\Debug\chess.Form1.resources
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\obj\Debug\chess.Properties.Resources.resources
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\obj\Debug\chess.csproj.GenerateResource.Cache
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\obj\Debug\chess.exe
+c:\users\lakerolmaker\documents\visual studio 2015\Projects\chess\chess\obj\Debug\chess.pdb
+E:\chess\chess\bin\Debug\chess.exe.config
+E:\chess\chess\obj\Debug\chess.exe
+E:\chess\chess\obj\Debug\chess.pdb
+E:\chess\chess\bin\Debug\chess.exe
+E:\chess\chess\bin\Debug\chess.pdb
+E:\chess\chess\obj\Debug\chess.Form1.resources
+E:\chess\chess\obj\Debug\chess.Properties.Resources.resources
+E:\chess\chess\obj\Debug\chess.csproj.GenerateResource.Cache
+E:\chess\chess\obj\Debug\chess.csprojResolveAssemblyReference.cache
+G:\programs\chess\chess\bin\Debug\chess.exe.config
+G:\programs\chess\chess\obj\Debug\chess.exe
+G:\programs\chess\chess\obj\Debug\chess.pdb
+G:\programs\chess\chess\bin\Debug\chess.exe
+G:\programs\chess\chess\bin\Debug\chess.pdb
+G:\programs\chess\chess\obj\Debug\chess.Form1.resources
+G:\programs\chess\chess\obj\Debug\chess.Properties.Resources.resources
+G:\programs\chess\chess\obj\Debug\chess.csproj.GenerateResource.Cache
+G:\programs\chess\chess\obj\Debug\chess.csprojResolveAssemblyReference.cache
+C:\Users\jacob\OneDrive - Kungsbacka kommun\visual studio\programs\chess\chess\bin\Debug\chess.exe.config
+C:\Users\jacob\OneDrive - Kungsbacka kommun\visual studio\programs\chess\chess\obj\Debug\chess.exe
+C:\Users\jacob\OneDrive - Kungsbacka kommun\visual studio\programs\chess\chess\obj\Debug\chess.pdb
+F:\programs\chess\chess\bin\Debug\chess.exe.config
+F:\programs\chess\chess\obj\Debug\chess.exe
+F:\programs\chess\chess\obj\Debug\chess.pdb
+F:\programs\chess\chess\bin\Debug\chess.exe
+F:\programs\chess\chess\bin\Debug\chess.pdb
+F:\programs\chess\chess\obj\Debug\chess.csprojResolveAssemblyReference.cache
+F:\programs\chess\chess\obj\Debug\chess.Form1.resources
+F:\programs\chess\chess\obj\Debug\chess.Properties.Resources.resources
+F:\programs\chess\chess\obj\Debug\chess.csproj.GenerateResource.Cache
