@@ -37,3 +37,13 @@ F:\programs\chess\chess\obj\Debug\chess.csprojResolveAssemblyReference.cache
 F:\programs\chess\chess\obj\Debug\chess.Form1.resources
 F:\programs\chess\chess\obj\Debug\chess.Properties.Resources.resources
 F:\programs\chess\chess\obj\Debug\chess.csproj.GenerateResource.Cache
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\bin\Debug\chess.exe.config
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\bin\Debug\chess.exe
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\bin\Debug\chess.pdb
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\obj\Debug\chess.csprojResolveAssemblyReference.cache
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\obj\Debug\chess.Form1.resources
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\obj\Debug\chess.Properties.Resources.resources
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\obj\Debug\chess.csproj.GenerateResource.Cache
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\obj\Debug\chess.csproj.CoreCompileInputs.cache
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\obj\Debug\chess.exe
+C:\Users\jacob\Google Drive\Programs\C#\chess\chess\obj\Debug\chess.pdb

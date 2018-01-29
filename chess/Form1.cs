@@ -17,10 +17,16 @@ namespace chess
             InitializeComponent();
         }
 
+        // TODO : bonde atackerar åt sidan
+        // TODO : gör så att man kan ta bort piece
         // TODO : gör multiplayer 
+
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Console.WriteLine("test");
+
 
             #region lägger in all tiles i en array
 
@@ -133,18 +139,50 @@ namespace chess
 
             #endregion
 
+            #region lägger till kill board
+
+            Globalvar.whiteKillBoard.Add(player2Kill1);
+            Globalvar.whiteKillBoard.Add(player2Kill2);
+            Globalvar.whiteKillBoard.Add(player2Kill3);
+            Globalvar.whiteKillBoard.Add(player2Kill4);
+            Globalvar.whiteKillBoard.Add(player2Kill5);
+            Globalvar.whiteKillBoard.Add(player2Kill6);
+            Globalvar.whiteKillBoard.Add(player2Kill7);
+            Globalvar.whiteKillBoard.Add(player2Kill8);
+            Globalvar.whiteKillBoard.Add(player2Kill9);
+            Globalvar.whiteKillBoard.Add(player2Kill10);
+            Globalvar.whiteKillBoard.Add(player2Kill11);
+            Globalvar.whiteKillBoard.Add(player2Kill12);
+            Globalvar.whiteKillBoard.Add(player2Kill13);
+            Globalvar.whiteKillBoard.Add(player2Kill14);
+            Globalvar.whiteKillBoard.Add(player2Kill15);
+            Globalvar.whiteKillBoard.Add(player2Kill16);
+
+            Globalvar.blackKillBoard.Add(player1Kill1);
+            Globalvar.blackKillBoard.Add(player1Kill2);
+            Globalvar.blackKillBoard.Add(player1Kill3);
+            Globalvar.blackKillBoard.Add(player1Kill4);
+            Globalvar.blackKillBoard.Add(player1Kill5);
+            Globalvar.blackKillBoard.Add(player1Kill6);
+            Globalvar.blackKillBoard.Add(player1Kill7);
+            Globalvar.blackKillBoard.Add(player1Kill8);
+            Globalvar.blackKillBoard.Add(player1Kill9);
+            Globalvar.blackKillBoard.Add(player1Kill10);
+            Globalvar.blackKillBoard.Add(player1Kill11);
+            Globalvar.blackKillBoard.Add(player1Kill12);
+            Globalvar.blackKillBoard.Add(player1Kill13);
+            Globalvar.blackKillBoard.Add(player1Kill14);
+            Globalvar.blackKillBoard.Add(player1Kill15);
+            Globalvar.blackKillBoard.Add(player1Kill16);
+
+
+            #endregion
+
         }
 
 
-        public static void removeHighlight()
-        {
-            foreach (highlightedTile item in Globalvar.highlightedTiles)
-            {
-                item.changeback();
-                item.location.Click -= item.Location_Click;
+        
 
-            }
-        }
 
 
     }

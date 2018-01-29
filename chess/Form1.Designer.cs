@@ -93,6 +93,73 @@
             this.tile35 = new System.Windows.Forms.Label();
             this.tile23 = new System.Windows.Forms.Label();
             this.tile11 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.player1Kill1 = new System.Windows.Forms.PictureBox();
+            this.player1Kill2 = new System.Windows.Forms.PictureBox();
+            this.player1Kill6 = new System.Windows.Forms.PictureBox();
+            this.player1Kill5 = new System.Windows.Forms.PictureBox();
+            this.player1Kill4 = new System.Windows.Forms.PictureBox();
+            this.player1Kill3 = new System.Windows.Forms.PictureBox();
+            this.player1Kill10 = new System.Windows.Forms.PictureBox();
+            this.player1Kill9 = new System.Windows.Forms.PictureBox();
+            this.player1Kill7 = new System.Windows.Forms.PictureBox();
+            this.player1Kill13 = new System.Windows.Forms.PictureBox();
+            this.player1Kill12 = new System.Windows.Forms.PictureBox();
+            this.player1Kill11 = new System.Windows.Forms.PictureBox();
+            this.player1Kill14 = new System.Windows.Forms.PictureBox();
+            this.player1Kill15 = new System.Windows.Forms.PictureBox();
+            this.player1Kill8 = new System.Windows.Forms.PictureBox();
+            this.player1Kill16 = new System.Windows.Forms.PictureBox();
+            this.player2Kill16 = new System.Windows.Forms.PictureBox();
+            this.player2Kill8 = new System.Windows.Forms.PictureBox();
+            this.player2Kill15 = new System.Windows.Forms.PictureBox();
+            this.player2Kill14 = new System.Windows.Forms.PictureBox();
+            this.player2Kill11 = new System.Windows.Forms.PictureBox();
+            this.player2Kill12 = new System.Windows.Forms.PictureBox();
+            this.player2Kill13 = new System.Windows.Forms.PictureBox();
+            this.player2Kill7 = new System.Windows.Forms.PictureBox();
+            this.player2Kill9 = new System.Windows.Forms.PictureBox();
+            this.player2Kill10 = new System.Windows.Forms.PictureBox();
+            this.player2Kill3 = new System.Windows.Forms.PictureBox();
+            this.player2Kill4 = new System.Windows.Forms.PictureBox();
+            this.player2Kill5 = new System.Windows.Forms.PictureBox();
+            this.player2Kill6 = new System.Windows.Forms.PictureBox();
+            this.player2Kill2 = new System.Windows.Forms.PictureBox();
+            this.player2Kill1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill1)).BeginInit();
             this.SuspendLayout();
             // 
             // tile21
@@ -608,11 +675,372 @@
             this.tile11.Size = new System.Drawing.Size(60, 60);
             this.tile11.TabIndex = 70;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
+            this.label1.Location = new System.Drawing.Point(558, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 22);
+            this.label1.TabIndex = 71;
+            this.label1.Text = "Player 1 ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(555, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(256, 13);
+            this.label2.TabIndex = 72;
+            this.label2.Text = "---------------------------------------------------------------------------------" +
+    "--";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
+            this.label3.Location = new System.Drawing.Point(558, 181);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 22);
+            this.label3.TabIndex = 73;
+            this.label3.Text = "Player 2";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // player1Kill1
+            // 
+            this.player1Kill1.Location = new System.Drawing.Point(558, 68);
+            this.player1Kill1.Name = "player1Kill1";
+            this.player1Kill1.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill1.TabIndex = 74;
+            this.player1Kill1.TabStop = false;
+            // 
+            // player1Kill2
+            // 
+            this.player1Kill2.Location = new System.Drawing.Point(589, 68);
+            this.player1Kill2.Name = "player1Kill2";
+            this.player1Kill2.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill2.TabIndex = 75;
+            this.player1Kill2.TabStop = false;
+            // 
+            // player1Kill6
+            // 
+            this.player1Kill6.Location = new System.Drawing.Point(713, 68);
+            this.player1Kill6.Name = "player1Kill6";
+            this.player1Kill6.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill6.TabIndex = 76;
+            this.player1Kill6.TabStop = false;
+            // 
+            // player1Kill5
+            // 
+            this.player1Kill5.Location = new System.Drawing.Point(682, 68);
+            this.player1Kill5.Name = "player1Kill5";
+            this.player1Kill5.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill5.TabIndex = 77;
+            this.player1Kill5.TabStop = false;
+            // 
+            // player1Kill4
+            // 
+            this.player1Kill4.Location = new System.Drawing.Point(651, 68);
+            this.player1Kill4.Name = "player1Kill4";
+            this.player1Kill4.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill4.TabIndex = 78;
+            this.player1Kill4.TabStop = false;
+            // 
+            // player1Kill3
+            // 
+            this.player1Kill3.Location = new System.Drawing.Point(620, 68);
+            this.player1Kill3.Name = "player1Kill3";
+            this.player1Kill3.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill3.TabIndex = 79;
+            this.player1Kill3.TabStop = false;
+            // 
+            // player1Kill10
+            // 
+            this.player1Kill10.Location = new System.Drawing.Point(589, 99);
+            this.player1Kill10.Name = "player1Kill10";
+            this.player1Kill10.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill10.TabIndex = 80;
+            this.player1Kill10.TabStop = false;
+            // 
+            // player1Kill9
+            // 
+            this.player1Kill9.Location = new System.Drawing.Point(558, 99);
+            this.player1Kill9.Name = "player1Kill9";
+            this.player1Kill9.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill9.TabIndex = 81;
+            this.player1Kill9.TabStop = false;
+            // 
+            // player1Kill7
+            // 
+            this.player1Kill7.Location = new System.Drawing.Point(744, 68);
+            this.player1Kill7.Name = "player1Kill7";
+            this.player1Kill7.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill7.TabIndex = 82;
+            this.player1Kill7.TabStop = false;
+            // 
+            // player1Kill13
+            // 
+            this.player1Kill13.Location = new System.Drawing.Point(682, 99);
+            this.player1Kill13.Name = "player1Kill13";
+            this.player1Kill13.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill13.TabIndex = 83;
+            this.player1Kill13.TabStop = false;
+            // 
+            // player1Kill12
+            // 
+            this.player1Kill12.Location = new System.Drawing.Point(651, 99);
+            this.player1Kill12.Name = "player1Kill12";
+            this.player1Kill12.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill12.TabIndex = 84;
+            this.player1Kill12.TabStop = false;
+            // 
+            // player1Kill11
+            // 
+            this.player1Kill11.Location = new System.Drawing.Point(620, 99);
+            this.player1Kill11.Name = "player1Kill11";
+            this.player1Kill11.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill11.TabIndex = 85;
+            this.player1Kill11.TabStop = false;
+            // 
+            // player1Kill14
+            // 
+            this.player1Kill14.Location = new System.Drawing.Point(713, 99);
+            this.player1Kill14.Name = "player1Kill14";
+            this.player1Kill14.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill14.TabIndex = 86;
+            this.player1Kill14.TabStop = false;
+            // 
+            // player1Kill15
+            // 
+            this.player1Kill15.Location = new System.Drawing.Point(744, 99);
+            this.player1Kill15.Name = "player1Kill15";
+            this.player1Kill15.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill15.TabIndex = 87;
+            this.player1Kill15.TabStop = false;
+            // 
+            // player1Kill8
+            // 
+            this.player1Kill8.Location = new System.Drawing.Point(775, 68);
+            this.player1Kill8.Name = "player1Kill8";
+            this.player1Kill8.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill8.TabIndex = 88;
+            this.player1Kill8.TabStop = false;
+            // 
+            // player1Kill16
+            // 
+            this.player1Kill16.Location = new System.Drawing.Point(775, 99);
+            this.player1Kill16.Name = "player1Kill16";
+            this.player1Kill16.Size = new System.Drawing.Size(25, 25);
+            this.player1Kill16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player1Kill16.TabIndex = 89;
+            this.player1Kill16.TabStop = false;
+            // 
+            // player2Kill16
+            // 
+            this.player2Kill16.Location = new System.Drawing.Point(775, 252);
+            this.player2Kill16.Name = "player2Kill16";
+            this.player2Kill16.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill16.TabIndex = 105;
+            this.player2Kill16.TabStop = false;
+            // 
+            // player2Kill8
+            // 
+            this.player2Kill8.Location = new System.Drawing.Point(775, 221);
+            this.player2Kill8.Name = "player2Kill8";
+            this.player2Kill8.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill8.TabIndex = 104;
+            this.player2Kill8.TabStop = false;
+            // 
+            // player2Kill15
+            // 
+            this.player2Kill15.Location = new System.Drawing.Point(744, 252);
+            this.player2Kill15.Name = "player2Kill15";
+            this.player2Kill15.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill15.TabIndex = 103;
+            this.player2Kill15.TabStop = false;
+            // 
+            // player2Kill14
+            // 
+            this.player2Kill14.Location = new System.Drawing.Point(713, 252);
+            this.player2Kill14.Name = "player2Kill14";
+            this.player2Kill14.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill14.TabIndex = 102;
+            this.player2Kill14.TabStop = false;
+            // 
+            // player2Kill11
+            // 
+            this.player2Kill11.Location = new System.Drawing.Point(620, 252);
+            this.player2Kill11.Name = "player2Kill11";
+            this.player2Kill11.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill11.TabIndex = 101;
+            this.player2Kill11.TabStop = false;
+            // 
+            // player2Kill12
+            // 
+            this.player2Kill12.Location = new System.Drawing.Point(651, 252);
+            this.player2Kill12.Name = "player2Kill12";
+            this.player2Kill12.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill12.TabIndex = 100;
+            this.player2Kill12.TabStop = false;
+            // 
+            // player2Kill13
+            // 
+            this.player2Kill13.Location = new System.Drawing.Point(682, 252);
+            this.player2Kill13.Name = "player2Kill13";
+            this.player2Kill13.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill13.TabIndex = 99;
+            this.player2Kill13.TabStop = false;
+            // 
+            // player2Kill7
+            // 
+            this.player2Kill7.Location = new System.Drawing.Point(744, 221);
+            this.player2Kill7.Name = "player2Kill7";
+            this.player2Kill7.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill7.TabIndex = 98;
+            this.player2Kill7.TabStop = false;
+            // 
+            // player2Kill9
+            // 
+            this.player2Kill9.Location = new System.Drawing.Point(558, 252);
+            this.player2Kill9.Name = "player2Kill9";
+            this.player2Kill9.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill9.TabIndex = 97;
+            this.player2Kill9.TabStop = false;
+            // 
+            // player2Kill10
+            // 
+            this.player2Kill10.Location = new System.Drawing.Point(589, 252);
+            this.player2Kill10.Name = "player2Kill10";
+            this.player2Kill10.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill10.TabIndex = 96;
+            this.player2Kill10.TabStop = false;
+            // 
+            // player2Kill3
+            // 
+            this.player2Kill3.Location = new System.Drawing.Point(620, 221);
+            this.player2Kill3.Name = "player2Kill3";
+            this.player2Kill3.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill3.TabIndex = 95;
+            this.player2Kill3.TabStop = false;
+            // 
+            // player2Kill4
+            // 
+            this.player2Kill4.Location = new System.Drawing.Point(651, 221);
+            this.player2Kill4.Name = "player2Kill4";
+            this.player2Kill4.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill4.TabIndex = 94;
+            this.player2Kill4.TabStop = false;
+            // 
+            // player2Kill5
+            // 
+            this.player2Kill5.Location = new System.Drawing.Point(682, 221);
+            this.player2Kill5.Name = "player2Kill5";
+            this.player2Kill5.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill5.TabIndex = 93;
+            this.player2Kill5.TabStop = false;
+            // 
+            // player2Kill6
+            // 
+            this.player2Kill6.Location = new System.Drawing.Point(713, 221);
+            this.player2Kill6.Name = "player2Kill6";
+            this.player2Kill6.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill6.TabIndex = 92;
+            this.player2Kill6.TabStop = false;
+            // 
+            // player2Kill2
+            // 
+            this.player2Kill2.Location = new System.Drawing.Point(589, 221);
+            this.player2Kill2.Name = "player2Kill2";
+            this.player2Kill2.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill2.TabIndex = 91;
+            this.player2Kill2.TabStop = false;
+            // 
+            // player2Kill1
+            // 
+            this.player2Kill1.Location = new System.Drawing.Point(558, 221);
+            this.player2Kill1.Name = "player2Kill1";
+            this.player2Kill1.Size = new System.Drawing.Size(25, 25);
+            this.player2Kill1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player2Kill1.TabIndex = 90;
+            this.player2Kill1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 552);
+            this.ClientSize = new System.Drawing.Size(822, 557);
+            this.Controls.Add(this.player2Kill16);
+            this.Controls.Add(this.player2Kill8);
+            this.Controls.Add(this.player2Kill15);
+            this.Controls.Add(this.player2Kill14);
+            this.Controls.Add(this.player2Kill11);
+            this.Controls.Add(this.player2Kill12);
+            this.Controls.Add(this.player2Kill13);
+            this.Controls.Add(this.player2Kill7);
+            this.Controls.Add(this.player2Kill9);
+            this.Controls.Add(this.player2Kill10);
+            this.Controls.Add(this.player2Kill3);
+            this.Controls.Add(this.player2Kill4);
+            this.Controls.Add(this.player2Kill5);
+            this.Controls.Add(this.player2Kill6);
+            this.Controls.Add(this.player2Kill2);
+            this.Controls.Add(this.player2Kill1);
+            this.Controls.Add(this.player1Kill16);
+            this.Controls.Add(this.player1Kill8);
+            this.Controls.Add(this.player1Kill15);
+            this.Controls.Add(this.player1Kill14);
+            this.Controls.Add(this.player1Kill11);
+            this.Controls.Add(this.player1Kill12);
+            this.Controls.Add(this.player1Kill13);
+            this.Controls.Add(this.player1Kill7);
+            this.Controls.Add(this.player1Kill9);
+            this.Controls.Add(this.player1Kill10);
+            this.Controls.Add(this.player1Kill3);
+            this.Controls.Add(this.player1Kill4);
+            this.Controls.Add(this.player1Kill5);
+            this.Controls.Add(this.player1Kill6);
+            this.Controls.Add(this.player1Kill2);
+            this.Controls.Add(this.player1Kill1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tile11);
             this.Controls.Add(this.tile23);
             this.Controls.Add(this.tile38);
@@ -683,7 +1111,40 @@
             this.Name = "Form1";
             this.Text = "Chess - 1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1Kill16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player2Kill1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -752,6 +1213,41 @@
         private System.Windows.Forms.Label tile35;
         private System.Windows.Forms.Label tile23;
         private System.Windows.Forms.Label tile11;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox player1Kill1;
+        private System.Windows.Forms.PictureBox player1Kill2;
+        private System.Windows.Forms.PictureBox player1Kill6;
+        private System.Windows.Forms.PictureBox player1Kill5;
+        private System.Windows.Forms.PictureBox player1Kill4;
+        private System.Windows.Forms.PictureBox player1Kill3;
+        private System.Windows.Forms.PictureBox player1Kill10;
+        private System.Windows.Forms.PictureBox player1Kill9;
+        private System.Windows.Forms.PictureBox player1Kill7;
+        private System.Windows.Forms.PictureBox player1Kill13;
+        private System.Windows.Forms.PictureBox player1Kill12;
+        private System.Windows.Forms.PictureBox player1Kill11;
+        private System.Windows.Forms.PictureBox player1Kill14;
+        private System.Windows.Forms.PictureBox player1Kill15;
+        private System.Windows.Forms.PictureBox player1Kill8;
+        private System.Windows.Forms.PictureBox player1Kill16;
+        private System.Windows.Forms.PictureBox player2Kill16;
+        private System.Windows.Forms.PictureBox player2Kill8;
+        private System.Windows.Forms.PictureBox player2Kill15;
+        private System.Windows.Forms.PictureBox player2Kill14;
+        private System.Windows.Forms.PictureBox player2Kill11;
+        private System.Windows.Forms.PictureBox player2Kill12;
+        private System.Windows.Forms.PictureBox player2Kill13;
+        private System.Windows.Forms.PictureBox player2Kill7;
+        private System.Windows.Forms.PictureBox player2Kill9;
+        private System.Windows.Forms.PictureBox player2Kill10;
+        private System.Windows.Forms.PictureBox player2Kill3;
+        private System.Windows.Forms.PictureBox player2Kill4;
+        private System.Windows.Forms.PictureBox player2Kill5;
+        private System.Windows.Forms.PictureBox player2Kill6;
+        private System.Windows.Forms.PictureBox player2Kill2;
+        private System.Windows.Forms.PictureBox player2Kill1;
     }
 }
 
