@@ -16,7 +16,7 @@ namespace chess
         //: Bilden på spelpjäsen
         public PictureBox ThePiece;
         //: pjäsens namn
-        public string pieceName;
+        public string pieceType;
         //: färgen som pjäsen har
         public string color;
         //: antal drag pjäsen har tagit
@@ -30,14 +30,12 @@ namespace chess
         public int X = 0;
         public int Y = 0;
 
-        public int nextX = 0;
-        public int nextY = 0;
         public String killer = null;
          
         //: tar in nment på pjäsen när den skapas
-        public piece(string pieceinput, string colorinput,  Label locationInput , string pieceNameInput, int Xinput, int Yinput)
+        public piece(string pieceinput, string colorinput,  Label locationInput , string pieceTypeInput, int Xinput, int Yinput)
         {
-            pieceName = pieceinput;
+            pieceType = pieceinput;
 
             color = colorinput;
 
@@ -46,7 +44,7 @@ namespace chess
             //: skapar bilden
             ThePiece = new PictureBox();
 
-            ThePiece.Name = pieceNameInput;
+            ThePiece.Name = pieceTypeInput;
 
             //: lägegr  till positionen i den figuren
             ThePiece.Location = new Point(0, 0);
@@ -73,27 +71,27 @@ namespace chess
             #region black
             if (color == "black") {
           
-            if (pieceName == "pawn")
+            if (pieceType == "pawn")
             {
                 ThePiece.Image = Properties.Resources.blackpawn;
             }
-            else if (pieceName == "tower")
+            else if (pieceType == "tower")
             {
                 ThePiece.Image = Properties.Resources.blacktower;
             }
-            else if (pieceName == "horse")
+            else if (pieceType == "horse")
             {
                 ThePiece.Image = Properties.Resources.blackhorse;
             }
-            else if (pieceName == "sprinter")
+            else if (pieceType == "sprinter")
             {
                 ThePiece.Image = Properties.Resources.blacksprinter;
             }
-            else if (pieceName == "king")
+            else if (pieceType == "king")
             {
                 ThePiece.Image = Properties.Resources.blackking;
             }
-            else if (pieceName == "queen")
+            else if (pieceType == "queen")
             {
                 ThePiece.Image = Properties.Resources.blackqueen;
             }
@@ -103,27 +101,27 @@ namespace chess
             else if (color == "white")
             {
 
-                if (pieceName == "pawn")
+                if (pieceType == "pawn")
                 {
                     ThePiece.Image = Properties.Resources.whitepawn;
                 }
-                else if (pieceName == "tower")
+                else if (pieceType == "tower")
                 {
                     ThePiece.Image = Properties.Resources.whitetower;
                 }
-                else if (pieceName == "horse")
+                else if (pieceType == "horse")
                 {
                     ThePiece.Image = Properties.Resources.whitehorse;
                 }
-                else if (pieceName == "sprinter")
+                else if (pieceType == "sprinter")
                 {
                     ThePiece.Image = Properties.Resources.whitesprinter;
                 }
-                else if (pieceName == "king")
+                else if (pieceType == "king")
                 {
                     ThePiece.Image = Properties.Resources.whiteking;
                 }
-                else if (pieceName == "queen")
+                else if (pieceType == "queen")
                 {
                     ThePiece.Image = Properties.Resources.whitequeen;
                 }
@@ -150,9 +148,9 @@ namespace chess
 
                 //: logic
 
-                // TODO : gör så att man attackera åt sidan
+               
                 #region Pawn
-                if (pieceName == "pawn")
+                if (pieceType == "pawn")
                 {
 
                     #region Black
@@ -462,7 +460,7 @@ namespace chess
                 #endregion
 
                 #region Tower
-                if (pieceName == "tower")
+                if (pieceType == "tower")
                 {
                     //: varbeler som säger ifall man ska sluta kolla i en riktning
                     bool readydown = false;
@@ -702,7 +700,7 @@ namespace chess
                 #endregion
 
                 #region Sprinter
-                if (pieceName == "sprinter")
+                if (pieceType == "sprinter")
                 {
                     //: varbeler som säger ifall man ska sluta kolla i en riktning
                     bool readyupright = false;
@@ -941,7 +939,7 @@ namespace chess
                 #endregion
 
                 #region Horse
-                if (pieceName == "horse")
+                if (pieceType == "horse")
                 {
 
 
@@ -1295,7 +1293,7 @@ namespace chess
 
                 // TODO gör rokad
                 #region King
-                if (pieceName == "king")
+                if (pieceType == "king")
                 {
 
                     #region 1x1
@@ -1631,7 +1629,7 @@ namespace chess
                 #endregion
 
                 #region Queen
-                if (pieceName == "queen")
+                if (pieceType == "queen")
                 {
 
                     #region I  diagonalen
@@ -2125,11 +2123,25 @@ namespace chess
             Y = Yinput;
 
             ThePiece.Parent = Globalvar.Tiles[ X , Y ];
-   
+
+            location = Globalvar.Tiles[X, Y];
+
             moves++;
 
-            Globalvar.changeTurn();
+            if(queenCheck() == true)
+            {
 
+                Globalvar.removePiece(ThePiece.Name);
+                ThePiece.Parent = null;
+                location.Image = null;
+
+                int uniqeId = Globalvar.pieces.Count;
+
+                Globalvar.pieces.Add(new piece("queen", color, location, color + "queen" + uniqeId, X, Y));
+            }
+
+
+           // Globalvar.changeTurn();
         }
 
         public void Kill()
@@ -2155,6 +2167,17 @@ namespace chess
            
         }
 
+        public Boolean queenCheck()
+        {
+
+            if((pieceType == "pawn") && (((Y == 0) && (color == "white")) || ((Y == 7) && (color == "black"))))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
     }
 
     class highlightedTile
@@ -2172,7 +2195,7 @@ namespace chess
 
         public piece enemy = null;
 
-        public highlightedTile(Color colorBefore, Color colorAfter, Label locationinput, string piecenameInput, int Xinput, int Yinput) {
+        public highlightedTile(Color colorBefore, Color colorAfter, Label locationinput, string pieceNameInput, int Xinput, int Yinput) {
 
             BeforeColor = colorBefore;
             
@@ -2180,7 +2203,7 @@ namespace chess
 
             location = locationinput;
 
-            pieceName = piecenameInput;
+            pieceName = pieceNameInput;
 
             X = Xinput;
 
@@ -2195,8 +2218,6 @@ namespace chess
                 enemy = Globalvar.getPieceAt(X, Y);
                 enemy.killOrder = true;
                 enemy.killer = pieceName;
-                enemy.nextX = X;
-                enemy.nextY = Y;
                }
             }
 

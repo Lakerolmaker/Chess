@@ -17,8 +17,8 @@ namespace chess
             InitializeComponent();
         }
 
-        // TODO : bonde atackerar åt sidan
-        // TODO : gör så att man kan ta bort piece
+       
+      
         // TODO : gör multiplayer 
 
         

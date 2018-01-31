@@ -55,6 +55,31 @@ namespace chess
             return null;
         }
 
+        public static int getIndex(String pieceName)
+        {
+            //: hittar rätt piece
+            for(int  i = 0; i < pieces.Count; i++)
+            {
+                if (pieces[i].ThePiece.Name == pieceName)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+
+        public static void removePiece(String pieceName)
+        {
+            for (int i = 0; i < pieces.Count; i++)
+            {
+                if (pieces[i].ThePiece.Name == pieceName)
+                {
+                    pieces.RemoveAt(i);
+                }
+            }
+        }
+
         public static void changeTurn()
         {
             if(playerID == 1)
