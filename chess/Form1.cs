@@ -25,8 +25,6 @@ namespace chess
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Console.WriteLine("test");
-
 
             #region lägger in all tiles i en array
 
@@ -102,8 +100,8 @@ namespace chess
             Globalvar.pieces.Add(new piece("tower", "black", tile11, "blacktower1" , 0, 0));
             Globalvar.pieces.Add(new piece("horse", "black", tile12, "blackhorse1", 1, 0));
             Globalvar.pieces.Add(new piece("sprinter", "black", tile13, "blacksprinter1", 2, 0));
-            Globalvar.pieces.Add(new piece("king", "black", tile14, "blackking", 3, 0));
-            Globalvar.pieces.Add(new piece("queen", "black", tile15, "blackqueen", 4, 0));
+            Globalvar.pieces.Add(new piece("queen", "black", tile14, "blackqueen", 3, 0));
+            Globalvar.pieces.Add(new piece("king", "black", tile15, "blackking", 4, 0));
             Globalvar.pieces.Add(new piece("sprinter", "black", tile16, "blacksprinter2", 5, 0));
             Globalvar.pieces.Add(new piece("horse", "black", tile17, "blackhorse2", 6, 0));
             Globalvar.pieces.Add(new piece("tower", "black", tile18, "blacktower2", 7, 0));
@@ -131,8 +129,8 @@ namespace chess
             Globalvar.pieces.Add(new piece("tower", "white", tile81, "whitetower1", 0, 7));
             Globalvar.pieces.Add(new piece("horse", "white", tile82, "whiteorse1", 1, 7));
             Globalvar.pieces.Add(new piece("sprinter", "white", tile83, "whitesprinter1", 2, 7));
-            Globalvar.pieces.Add(new piece("king", "white", tile84, "whiteking", 3, 7));
-            Globalvar.pieces.Add(new piece("queen", "white", tile85, "whitequeen", 4, 7));
+            Globalvar.pieces.Add(new piece("queen", "white", tile84, "whitequeen", 3, 7));
+            Globalvar.pieces.Add(new piece("king", "white", tile85, "whiteking", 4, 7));
             Globalvar.pieces.Add(new piece("sprinter", "white", tile86, "whitesprinter2", 5, 7));
             Globalvar.pieces.Add(new piece("horse", "white", tile87, "whitehorse2", 6, 7));
             Globalvar.pieces.Add(new piece("tower", "white", tile88, "whitetower2", 7, 7));

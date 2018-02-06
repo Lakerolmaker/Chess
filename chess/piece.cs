@@ -1625,6 +1625,62 @@ namespace chess
 
                     #endregion
 
+                    #region Rokad
+                    if (moves == 0)
+                    {
+                        #region white
+                        if (color == "white")
+                        { 
+                            if ((Globalvar.Tiles[7, 7].Controls.Count != 0) && (Globalvar.Tiles[6, 7].Controls.Count == 0) && (Globalvar.Tiles[5, 7].Controls.Count == 0))
+                            {
+                              String name =  Globalvar.Tiles[7, 7].Controls[0].Name;
+
+                                if(name == "whitetower2")
+                                {
+                                    piece tower = Globalvar.getPiece(name);
+
+                                    if(tower.moves == 0)
+                                    {
+                                        castlingMove move = new castlingMove(Globalvar.Tiles[6, 7].BackColor, Color.Yellow, Globalvar.Tiles[6, 7], ThePiece.Name, 6, 7, "whitetower2", 5, 7);
+                                        move.change();
+                                        Globalvar.castlingMoveTiles.Add(move);
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                        #endregion
+
+                        #region black
+                        if (color == "black")
+                        {
+                            if ((Globalvar.Tiles[7, 0].Controls.Count != 0) && (Globalvar.Tiles[6, 0].Controls.Count == 0) && (Globalvar.Tiles[5, 0].Controls.Count == 0))
+                            {
+                                String name = Globalvar.Tiles[7, 0].Controls[0].Name;
+
+                                if (name == "blacktower2")
+                                {
+                                    piece tower = Globalvar.getPiece(name);
+
+                                    if (tower.moves == 0)
+                                    {
+                                        castlingMove move = new castlingMove(Globalvar.Tiles[6, 0].BackColor, Color.Yellow, Globalvar.Tiles[6, 0], ThePiece.Name, 6, 0, "blacktower2", 5, 0);
+                                        move.change();
+                                        Globalvar.castlingMoveTiles.Add(move);
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                        #endregion
+
+                    }
+
+                    #endregion
                 }
                 #endregion
 
@@ -2141,7 +2197,7 @@ namespace chess
             }
 
 
-           // Globalvar.changeTurn();
+            Globalvar.changeTurn();
         }
 
         public void Kill()
@@ -2165,6 +2221,11 @@ namespace chess
             Globalvar.removeKillOrder();
             Globalvar.getPiece(killer).changeLocation(X, Y);
            
+            if(pieceType == "king")
+            {
+                Globalvar.endGame(color);
+            }
+
         }
 
         public Boolean queenCheck()
@@ -2176,6 +2237,75 @@ namespace chess
             }
 
             return false;
+        }
+
+    }
+
+    class castlingMove
+    {
+
+        Color BeforeColor;
+        Color AfterColor;
+        public Label location;
+
+        string pieceName1;
+        string pieceName2;
+
+        //: vilken korninat den pjäsen som hr klikts har
+        public int X1 = 0;
+        public int Y1 = 0;
+        public int X2 = 0;
+        public int Y2 = 0;
+
+        public castlingMove(Color colorBefore, Color colorAfter, Label locationinput, string pieceNameInput1, int Xinput1, int Yinput1, string pieceNameInput2, int Xinput2, int Yinput2)
+        {
+
+            BeforeColor = colorBefore;
+
+            AfterColor = colorAfter;
+
+            location = locationinput;
+
+            pieceName1 = pieceNameInput1;
+            pieceName2 = pieceNameInput2;
+
+            X1 = Xinput1;
+            Y1 = Yinput1;
+
+            X2 = Xinput2;
+            Y2 = Yinput2;
+
+            location.Click += Location_Click;
+
+            location.Cursor = Cursors.Hand;
+        }
+
+        public void Location_Click(object sender, EventArgs e)
+        {
+
+            //: om man ska attackera
+            if (AfterColor == Color.Yellow)
+            {
+                Globalvar.getPiece(pieceName1).changeLocation(X1, Y1);
+                Globalvar.getPiece(pieceName2).changeLocation(X2, Y2);
+                Globalvar.changeTurn();
+            }
+
+            //: tar bort allting efter man har gått till den.
+            Globalvar.removeHighlight();
+           
+
+        }
+
+
+        public void change()
+        {
+            location.BackColor = AfterColor;
+        }
+
+        public void changeback()
+        {
+            location.BackColor = BeforeColor;
         }
 
     }
@@ -2213,12 +2343,12 @@ namespace chess
 
             location.Cursor = Cursors.Hand;
 
-                if(AfterColor == Color.Red)
-               {
+             if(AfterColor == Color.Red)
+             {
                 enemy = Globalvar.getPieceAt(X, Y);
                 enemy.killOrder = true;
                 enemy.killer = pieceName;
-               }
+              }
             }
 
         public void Location_Click(object sender, EventArgs e)
@@ -2248,6 +2378,8 @@ namespace chess
         }
 
     }
+
+
 
 }
 

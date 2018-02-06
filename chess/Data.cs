@@ -15,6 +15,7 @@ namespace chess
         public static List<piece> pieces = new List<piece>();
 
         public static List<highlightedTile> highlightedTiles = new List<highlightedTile>();
+        public static List<castlingMove> castlingMoveTiles = new List<castlingMove>();
 
         public static Label[,] Tiles = new Label[8, 8];
 
@@ -43,16 +44,9 @@ namespace chess
 
         public static piece getPieceAt(int x , int y)
         {
-            //: hittar rätt piece
-            foreach (piece item in Globalvar.pieces)
-            {
-                if ((item.X == x) && (item.Y == y))
-                {
-                    return item;
-                }
-            }
 
-            return null;
+            return getPiece(Tiles[x, y].Controls[0].Name);
+
         }
 
         public static int getIndex(String pieceName)
@@ -106,6 +100,48 @@ namespace chess
                 item.changeback();
                 item.location.Click -= item.Location_Click;
             }
+
+            foreach (castlingMove item in Globalvar.castlingMoveTiles)
+            {
+                item.changeback();
+                item.location.Click -= item.Location_Click;
+            }
+
+            highlightedTiles.Clear();
+            castlingMoveTiles.Clear();
+
+        }
+
+        public static void endGame(String loserColor)
+        {
+            String winnercolor = FirstCharToUpper(oppositeColor(loserColor));
+
+            String title = winnercolor + " Wins";
+
+            String message = "Player " + playerID + " is the winner";
+
+            MessageBox.Show(message , title);
+
+            playerID = 0;
+        }
+
+        public static String oppositeColor(String Color)
+        {
+            if(Color == "white")
+            {
+                return "black";
+            }
+            else
+            {
+                return "white";
+            }
+        }
+
+        public static string FirstCharToUpper(string input)
+        {
+            if (String.IsNullOrEmpty(input))
+                throw new ArgumentException("ARGH!");
+            return input.First().ToString().ToUpper() + input.Substring(1);
         }
 
     }
