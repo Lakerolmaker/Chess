@@ -25,6 +25,8 @@ namespace chess
         public static List<PictureBox> whiteKillBoard = new List<PictureBox>();
         public static List<PictureBox> blackKillBoard = new List<PictureBox>();
 
+        private static Random rand = new Random();
+
 
         public static piece getPiece(String pieceName)
         {
@@ -118,14 +120,34 @@ namespace chess
 
             String title = winnercolor + " Wins";
 
-            String message = "Player " + playerID + " is the winner";
+            int id = getOpositePlayerID();
+
+            String message = "Player " + id + " is the winner";
 
             MessageBox.Show(message , title);
 
             playerID = 0;
         }
 
-        public static String oppositeColor(String Color)
+        public static void lockControls()
+        {
+            playerID = 0;
+        }
+
+
+        public static int getOpositePlayerID()
+        {
+            if (playerID == 1)
+            {
+                return 2;
+            }
+            else
+            {
+                return 1;
+            }
+        }
+
+        public static string oppositeColor(String Color)
         {
             if(Color == "white")
             {
@@ -142,6 +164,41 @@ namespace chess
             if (String.IsNullOrEmpty(input))
                 throw new ArgumentException("ARGH!");
             return input.First().ToString().ToUpper() + input.Substring(1);
+        }
+
+        public static string getRandomPiece()
+        {
+            int randomNum = rand.Next(0, 6);
+            
+            if(randomNum == 0)
+            {
+                return "pawn";
+            }
+            else if (randomNum == 1)
+            {
+                return "tower";
+            }
+            else if (randomNum == 2)
+            {
+                return "horse";
+            }
+            else if (randomNum == 3)
+            {
+                return "sprinter";
+            }
+            else if (randomNum == 4)
+            {
+                return "queen";
+            }
+            else if (randomNum == 5)
+            {
+                return "king";
+            }
+            else
+            {
+                return null;
+            }
+
         }
 
     }

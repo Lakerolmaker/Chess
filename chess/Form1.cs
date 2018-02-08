@@ -20,6 +20,7 @@ namespace chess
        
       
         // TODO : gör multiplayer 
+        // TODO : check for checkmate
 
         
 
@@ -95,48 +96,6 @@ namespace chess
 
             #endregion
 
-            #region skapar alla pjäser
-
-            Globalvar.pieces.Add(new piece("tower", "black", tile11, "blacktower1" , 0, 0));
-            Globalvar.pieces.Add(new piece("horse", "black", tile12, "blackhorse1", 1, 0));
-            Globalvar.pieces.Add(new piece("sprinter", "black", tile13, "blacksprinter1", 2, 0));
-            Globalvar.pieces.Add(new piece("queen", "black", tile14, "blackqueen", 3, 0));
-            Globalvar.pieces.Add(new piece("king", "black", tile15, "blackking", 4, 0));
-            Globalvar.pieces.Add(new piece("sprinter", "black", tile16, "blacksprinter2", 5, 0));
-            Globalvar.pieces.Add(new piece("horse", "black", tile17, "blackhorse2", 6, 0));
-            Globalvar.pieces.Add(new piece("tower", "black", tile18, "blacktower2", 7, 0));
-
-            Globalvar.pieces.Add(new piece("pawn", "black", tile21, "blackpawn1", 0, 1));
-            Globalvar.pieces.Add(new piece("pawn", "black", tile22, "blackpawn2", 1, 1));
-            Globalvar.pieces.Add(new piece("pawn", "black", tile23, "blackpawn3", 2, 1));
-            Globalvar.pieces.Add(new piece("pawn", "black", tile24, "blackpawn4", 3, 1));
-            Globalvar.pieces.Add(new piece("pawn", "black", tile25, "blackpawn5", 4, 1));
-            Globalvar.pieces.Add(new piece("pawn", "black", tile26, "blackpawn6", 5, 1));
-            Globalvar.pieces.Add(new piece("pawn", "black", tile27, "blackpawn7", 6, 1));
-            Globalvar.pieces.Add(new piece("pawn", "black", tile28, "blackpawn8", 7, 1));
-
-
-
-            Globalvar.pieces.Add(new piece("pawn", "white", tile71, "whitepawn1", 0, 6));
-            Globalvar.pieces.Add(new piece("pawn", "white", tile72, "whitepawn2", 1, 6));
-            Globalvar.pieces.Add(new piece("pawn", "white", tile73, "whitepawn3", 2, 6));
-            Globalvar.pieces.Add(new piece("pawn", "white", tile74, "whitepawn4", 3, 6));
-            Globalvar.pieces.Add(new piece("pawn", "white", tile75, "whitepawn5", 4, 6));
-            Globalvar.pieces.Add(new piece("pawn", "white", tile76, "whitepawn6", 5, 6));
-            Globalvar.pieces.Add(new piece("pawn", "white", tile77, "whitepawn7", 6, 6));
-            Globalvar.pieces.Add(new piece("pawn", "white", tile78, "whitepawn8", 7, 6));
-
-            Globalvar.pieces.Add(new piece("tower", "white", tile81, "whitetower1", 0, 7));
-            Globalvar.pieces.Add(new piece("horse", "white", tile82, "whiteorse1", 1, 7));
-            Globalvar.pieces.Add(new piece("sprinter", "white", tile83, "whitesprinter1", 2, 7));
-            Globalvar.pieces.Add(new piece("queen", "white", tile84, "whitequeen", 3, 7));
-            Globalvar.pieces.Add(new piece("king", "white", tile85, "whiteking", 4, 7));
-            Globalvar.pieces.Add(new piece("sprinter", "white", tile86, "whitesprinter2", 5, 7));
-            Globalvar.pieces.Add(new piece("horse", "white", tile87, "whitehorse2", 6, 7));
-            Globalvar.pieces.Add(new piece("tower", "white", tile88, "whitetower2", 7, 7));
-
-            #endregion
-
             #region lägger till kill board
 
             Globalvar.whiteKillBoard.Add(player2Kill1);
@@ -176,12 +135,14 @@ namespace chess
 
             #endregion
 
+            //: väljer configuration
+            initialize.random();
+
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-        
-
-
-
+        }
     }
 }
